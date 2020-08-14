@@ -99,7 +99,7 @@ g+geom_histogram(col="darkblue", fill="lightblue", boundary=0, binwidth=2500)+gg
 ## Warning: Removed 8 rows containing non-finite values (stat_bin).
 ```
 
-![](Pa1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
 2. Calculate and report the mean and median total number of steps taken per day
 
@@ -139,7 +139,7 @@ h <- ggplot(avg_daily_activity, aes(x=Interval, y=Mean))
 h+geom_line(col="blue")+ggtitle("Average Steps Per Time Interval")+xlab("Interval")+ylab("Average Number of Steps")+theme(plot.title = element_text(face="bold", size=12))
 ```
 
-![](Pa1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -205,7 +205,7 @@ j <- ggplot(total_steps_filled, aes(Steps))
 j+geom_histogram(col="purple", fill="pink", boundary=0, binwidth=2500)+ggtitle("Histogram of Steps Per Day with NA Values filled by Daily Mean")+xlab("Steps")+ylab("Frequency")+theme(plot.title = element_text(face="bold", size=12))
 ```
 
-![](Pa1_template_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
 
 
 ```r
@@ -266,6 +266,6 @@ k <- ggplot(weekday_end_data, aes(x=interval, y=steps, color = DayType))
 k+geom_line()+ggtitle("Average Steps Per Time Interval")+xlab("Interval")+ylab("Average Number of Steps")+theme(plot.title = element_text(face="bold", size=12))+facet_grid(DayType ~.)
 ```
 
-![](Pa1_template_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
 
 The end!
